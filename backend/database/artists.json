@@ -1,0 +1,18 @@
+{
+  "drake": {
+    "id": "drake",
+    "name": "drake",
+    "imageCount": 10,
+    "videoCount": 0,
+    "createdAt": "2025-12-02T19:55:34.717Z",
+    "updatedAt": "2025-12-02T19:55:46.725Z"
+  },
+  "lil-wayne": {
+    "id": "lil-wayne",
+    "name": "lil wayne",
+    "imageCount": 0,
+    "videoCount": 0,
+    "createdAt": "2025-12-02T19:57:46.615Z",
+    "updatedAt": "2025-12-02T19:57:46.615Z"
+  }
+}
