@@ -5,6 +5,8 @@ import Features from './pages/Features';
 import Pricing from './pages/Pricing';
 import AppDashboard from './pages/AppDashboard';
 import ScriptToVideo from './pages/ScriptToVideo';
+import ArtistManager from './pages/Admin/ArtistManager';
+import CelebrityVideo from './pages/CelebrityVideo/CelebrityVideo';
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/app" element={<AppDashboard />} />
         <Route path="/script-to-video" element={<ScriptToVideo />} />
+        <Route path="/admin" element={<ArtistManager />} />
+        <Route path="/celebrity-video" element={<CelebrityVideo />} />
       </Routes>
     </BrowserRouter>
   );

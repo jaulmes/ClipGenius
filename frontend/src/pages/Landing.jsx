@@ -101,6 +101,37 @@ export default function Landing() {
                             Créer depuis un Script →
                         </Link>
                     </div>
+
+                    {/* Celebrity Video */}
+                    <div className="bg-gradient-to-br from-yellow-600/20 to-amber-600/20 border-2 border-yellow-500/50 rounded-2xl p-8 hover:border-yellow-400 transition group relative md:col-span-2">
+                        <div className="text-6xl mb-4">⭐</div>
+                        <h2 className="text-3xl font-bold text-white mb-4">Celebrity Video</h2>
+                        <p className="text-gray-300 mb-6 text-lg">
+                            Create professional videos from scripts using your own celebrity media
+                        </p>
+                        <ul className="space-y-3 mb-6">
+                            <li className="flex items-start gap-3">
+                                <span className="text-green-400 text-xl">✓</span>
+                                <span className="text-gray-300">Upload & manage celebrity photos/videos</span>
+                            </li>
+                            <li className="flex items-start gap-3">
+                                <span className="text-green-400 text-xl">✓</span>
+                                <span className="text-gray-300">AI matches media to your script</span>
+                            </li>
+                            <li className="flex items-start gap-3">
+                                <span className="text-green-400 text-xl">✓</span>
+                                <span className="text-gray-300">Ken Burns effect on images</span>
+                            </li>
+                            <li className="flex items-start gap-3">
+                                <span className="text-green-400 text-xl">✓</span>
+                                <span className="text-gray-300">Voice-over synchronized automatically</span>
+                            </li>
+                        </ul>
+                        <Link to="/celebrity-video"
+                            className="block w-full text-center bg-gradient-to-r from-yellow-600 to-amber-600 hover:from-yellow-700 hover:to-amber-700 text-white px-8 py-4 rounded-xl font-bold text-lg shadow-xl transition transform hover:scale-105">
+                            Create Celebrity Video →
+                        </Link>
+                    </div>
                 </div>
 
                 {/* Pricing Preview */}
@@ -290,6 +321,7 @@ export default function Landing() {
                 </div>
             </section>
 
+            <AdminLink />
             <Footer />
         </div>
     );
@@ -318,6 +350,19 @@ function ProcessStep({ number, title, description, color }) {
             </div>
             <h4 className="text-xl font-bold text-white mb-2">{title}</h4>
             <p className="text-gray-400">{description}</p>
+        </div>
+    );
+}
+
+function AdminLink() {
+    return (
+        <div className="fixed bottom-4 right-4 z-50">
+            <Link
+                to="/admin"
+                className="flex items-center gap-2 bg-gray-800 hover:bg-gray-700 border border-gray-600 text-gray-300 hover:text-white px-4 py-2 rounded-lg shadow-lg transition text-sm"
+            >
+                🔐 Admin Panel
+            </Link>
         </div>
     );
 }
